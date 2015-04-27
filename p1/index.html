@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="row">
+			<div class="col-sm-6">
+				<img src="img/Udacity_Logo.svg" class="img-responsive hidden-xs udacity-logo">
+			</div>
+			<div class="col-sm-6 text-right name-and-title">
+				<h1>JANE DOETTE</h1>
+				<h4>FRONT-END NINJA</h4>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-sm-12">
+				<picture>
+					<source
+						srcset="img/main_content_large_1x.jpg 1x, img/main_content_large_2x.jpg 2x"
+					>
+					<img src="img/main_content_large_1x.jpg" class="img-responsive main-content">
+				</picture>
+			</div>
+		</div>
+		<div class="row featured-work">
+			<h2 class="col-sm-12">Featured Work</h2>
+			<div class="col-sm-4">
+				<picture  data-toggle="modal" data-target="#featured-work-1">
+					<source
+						srcset="img/featured_work_1_small_1x.jpg 1x, img/featured_work_1_small_2x.jpg 2x"
+					>
+					<img src="img/featured_work_1_small_1x.jpg" class="img-responsive center-block">
+				</picture>
+				<div class="text-center">
+					<h3>APPIFY</h3>
+					<p>
+						<a class= "featured-work-link" href="https://github.com/udacity/Appify/">
+							https://github.com/udacity/Appify/
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<picture  data-toggle="modal" data-target="#featured-work-2">
+					<source
+						srcset="img/featured_work_2_small_1x.jpg 1x, img/featured_work_2_small_2x.jpg 2x"
+					>
+					<img src="img/featured_work_2_small_1x.jpg" class="img-responsive center-block">
+				</picture>
+				<div class="text-center">
+					<h3>SUNFLOWER</h3>
+					<p>
+						<a class= "featured-work-link" href="https://github.com/udacity/Sunflower/">
+							https://github.com/udacity/Sunflower/
+						</a>
+					</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+				<picture  data-toggle="modal" data-target="#featured-work-3">
+					<source
+						srcset="img/featured_work_3_small_1x.jpg 1x, img/featured_work_3_small_2x.jpg 2x"
+					>
+					<img src="img/featured_work_3_small_1x.jpg" class="img-responsive center-block">
+				</picture>
+				<div class="text-center">
+					<h3>BOKEH</h3>
+					<p>
+						<a class= "featured-work-link" href="https://github.com/udacity/Bokeh/">
+							https://github.com/udacity/Bokeh/
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal -->
+		<div class="modal fade" id="featured-work-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">APPIFY</h4>
+					</div>
+					<div class="modal-body">
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="img/featured_work_1_small_1x.jpg 1x, img/featured_work_1_small_2x.jpg 2x"
+							>
+							<source
+								media="(min-width: 641px)"
+								srcset="img/featured_work_1_large_1x.jpg 1x, img/featured_work_1_large_2x.jpg 2x"
+							>
+							<img src="img/featured_work_1_large_1x.jpg" class="img-responsive center-block">
+						</picture>
+						<p class="text-center">https://github.com/udacity/Appify/</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="featured-work-2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">SUNFLOWER</h4>
+					</div>
+					<div class="modal-body">
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="img/featured_work_2_small_1x.jpg 1x, img/featured_work_2_small_2x.jpg 2x"
+							>
+							<source
+								media="(min-width: 641px)"
+								srcset="img/featured_work_2_large_1x.jpg 1x, img/featured_work_2_large_2x.jpg 2x"
+							>
+							<img src="img/featured_work_2_large_1x.jpg" class="img-responsive center-block">
+						</picture>
+						<p class="text-center">https://github.com/udacity/Sunflower/</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="featured-work-3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">BOKEH</h4>
+					</div>
+					<div class="modal-body">
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="img/featured_work_3_small_1x.jpg 1x, img/featured_work_3_small_2x.jpg 2x"
+							>
+							<source
+								media="(min-width: 641px)"
+								srcset="img/featured_work_3_large_1x.jpg 1x, img/featured_work_3_large_2x.jpg 2x"
+							>
+							<img src="img/featured_work_3_large_1x.jpg" class="img-responsive center-block">
+						</picture>
+						<p class="text-center">https://github.com/udacity/Bokeh/</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="row text-center">
+			<p>Udacity Front-End Nanodegree Project 1</p>
+		</footer>
+	</div>
+</body>
+</html>
